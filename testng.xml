@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true"
+          name="C:/Users/61085802/OneDrive - LTIMindtree/Desktop/Auto/SeleniumTestNGExtent">
+        <classes>
+            <class name="tests.LoginTest">
+                <methods>
+                    <include name="verifyLoginPage"/>
+                </methods>
+            </class>
+            <class name="tests.HomePageTest">
+                <methods>
+                    <include name="verifyHomePage"/>
+                </methods>
+            </class>
+            <class name="tests.CheckOutTest">
+                <methods>
+                    <include name="verifyCheckOutPage"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
