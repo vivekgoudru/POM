@@ -9,7 +9,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
-
+import org.openqa..selenium.chrome.ChromeOptions;
 public class TestBase {
 
     public static WebDriver driver;
@@ -20,7 +20,10 @@ public class TestBase {
     @BeforeTest
     public void setUp() {
         extent.attachReporter(spark);
-        driver = new ChromeDriver();
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--headless");
+        options.addArguments("no-sandbox");
+        driver = new ChromeDriver(options);
         driver.get("https://www.saucedemo.com/");
         driver.manage().window().maximize();
         test = extent.createTest("Setting Up Browser")
