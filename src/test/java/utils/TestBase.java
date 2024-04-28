@@ -9,7 +9,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
-import org.openqa..selenium.chrome.ChromeOptions;
+import org.openqa.selenium.chrome.ChromeOptions;
 public class TestBase {
 
     public static WebDriver driver;
